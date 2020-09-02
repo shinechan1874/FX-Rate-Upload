@@ -37,7 +37,7 @@ download = driver.find_element_by_link_text("Month End FX Rates")
 download.click()
 time.sleep(2)
 
-month_end_FX_Rates = pd.ExcelFile("C:/Users/SXC57/PycharmProjects/Monthly Fx Uplaod/Month End FX Rates.xls")
+month_end_FX_Rates = pd.ExcelFile("C:/Users/---/PycharmProjects/Monthly Fx Uplaod/Month End FX Rates.xls")
 fx_rates = month_end_FX_Rates.parse("Report")
 fx_rates = fx_rates.iloc[:, 0:3]
 #for current month rate
@@ -66,8 +66,8 @@ driver.find_element_by_id("btnSiteLogin").click()
 # uploadbutton = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.NAME, "Selectedfile")))
 time.sleep(2)
 uploadbutton = driver.find_element_by_name("Selectedfile")
-uploadbutton.send_keys(f"C:/Users/SXC57/PycharmProjects/Monthly Fx Uplaod/{uploadfilename1}")
-uploadbutton.send_keys(f"C:/Users/SXC57/PycharmProjects/Monthly Fx Uplaod/{uploadfilename2}")
+uploadbutton.send_keys(f"C:/Users/---/PycharmProjects/Monthly Fx Uplaod/{uploadfilename1}")
+uploadbutton.send_keys(f"C:/Users/---/PycharmProjects/Monthly Fx Uplaod/{uploadfilename2}")
 
 
 
